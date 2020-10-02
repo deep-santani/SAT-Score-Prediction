@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Aug  8 09:32:21 2020
-
-@author: deep
-"""
-
 import numpy as np
 import pandas as pd
 import pickle
@@ -20,4 +13,4 @@ reg.fit(x,y)
 
 pickle.dump(reg, open('model.pkl','wb'))
 model = pickle.load(open('model.pkl','rb'))
-model.predict([[1750,1]])
+model.predict([[1000,1]])
